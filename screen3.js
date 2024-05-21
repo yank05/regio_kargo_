@@ -10,7 +10,8 @@ const SettingsScreen = ({ navigation }) => {
     <View style={styles.container}>
       {/* Information Section */}
       <View style={styles.information}>
-        <Text style={styles.informationText}>Einstieg: {startStation} / Ausstieg: {endStation}</Text>
+        <Text style={styles.informationText}>Einstieg: {startStation} <br/>
+        Ausstieg: {endStation}</Text>
       </View>
         {/* Placeholder for Map */}
         <View style={styles.mapPlaceholder}></View>
