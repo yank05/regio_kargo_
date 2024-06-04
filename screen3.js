@@ -1,21 +1,22 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
 const SettingsScreen = ({ navigation }) => {
-  // Sample data for start and end stations
   const startStation = "Station 1";
   const endStation = "Station 2";
 
   return (
     <View style={styles.container}>
-      {/* Information Section */}
       <View style={styles.information}>
-        <Text style={styles.informationText}>Einstieg: {startStation} <br/>
-        Ausstieg: {endStation}</Text>
+        <Text style={styles.informationText}>Einstieg: {startStation}</Text>
       </View>
-        {/* Placeholder for Map */}
-        <View style={styles.mapPlaceholder}></View>
+      <View style={styles.information}>
+        <Text style={styles.Time}>Ankunft in XX Sek</Text>
+        <TouchableOpacity  style={styles.button}>
+        <Text style={styles.buttonText}>QR-Code scannen</Text>
+      </TouchableOpacity>
       </View>
+    </View>
   );
 };
 
@@ -24,6 +25,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     padding: 20,
+    alignItems: 'center', 
+    justifyContent: 'center', 
   },
   overview: {
     flex: 1,
@@ -36,17 +39,24 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 10,
   },
-  mapPlaceholder: {
-    width: '100%',
-    aspectRatio: 16/9, // Example aspect ratio, adjust as needed
-    backgroundColor: '#f0f0f0',
-    borderRadius: 10,
-  },
   information: {
     marginTop: 20,
   },
   informationText: {
-    fontSize: 16,
+    fontSize: 20,
+    fontWeight: 'bold', 
+  },
+  Time: {
+    fontSize: 20,
+    color: '#ff0000', 
+  },
+  button: {
+    backgroundColor: 'rgb(55, 181, 233)',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+    width: '45%',
+    marginTop: '5%', 
   },
 });
 
