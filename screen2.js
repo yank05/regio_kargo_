@@ -11,7 +11,7 @@ const OrderScreen = () => {
         <Text style={styles.processingStep}>Aktueller Verarbeitungsschritt:</Text>
         <Text style={styles.step}>In S-Bahn geladen</Text>
         <TouchableOpacity  style={styles.button}>
-        <Text style={styles.buttonText}>Abholzeit ansehen</Text>
+        <Text style={styles.buttonText}>Unten rechts auf jetzt abholen klicken!</Text>
       </TouchableOpacity>
       </View>
 

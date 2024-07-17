@@ -44,7 +44,6 @@ const App = () => {
         </View>
       </Modal>
 
-      {/* Rest der App */}
       {!showModal && <BottomTabNavigator />}
     </View>
   );

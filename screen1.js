@@ -16,7 +16,7 @@ const Screen1 = () => {
         <Text style={styles.mainTitle}>Herzlich Willkommen bei RegioKArgo</Text>
         <Text style={styles.subtitle}>Derzeit erwartest du 1 Paket. Den Status kannst du unter "Meine Pakete" einsehen.</Text>
       </View>
-      <Text style={styles.routeBoxTitle}>Jetzt passende Route checken</Text>
+      <Text style={styles.routeBoxTitle}>Route planen</Text>
       <View style={styles.routeBox}>
         <TextInput
           style={styles.input}

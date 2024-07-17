@@ -12,7 +12,7 @@ const BottomTabNavigator = () => (
     <Tab.Navigator>
       <Tab.Screen name="Start" component={Screen1} />
       <Tab.Screen name="Meine Pakete" component={Screen2} />
-      <Tab.Screen name="Profil" component={Screen3} />
+      <Tab.Screen name="Jetzt abholen" component={Screen3} />
     </Tab.Navigator>
   </NavigationContainer>
 );
